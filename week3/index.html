@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>문의하기</title>
+    <meta name="description" content="문의하기 페이지입니다." />
+    <meta property="og:title" content="문의하기" />
+    <meta property="og:description" content="문의하기 페이지입니다." />
+    <meta
+      property="og:url"
+      content="https://lgosoup.github.io/web-practice-2026/week3/"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>문의하기</h1>
+    </header>
+    <main>
+      <img
+        src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcSVcN7%2FbtriSJ1UbBl%2FAAAAAAAAAAAAAAAAAAAAAP3SV6E2pNeqoiAthrFdXHbqPcXDu8fCpX_LzHoCImNM%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DbYgl1P0H%252F7hXwckBS5FjlT4GLeE%253D"
+        alt="프로필 이미지"
+      />
+
+      <form>
+        <label for="name">이름:</label>
+        <input type="text" id="name" name="name" />
+
+        <label for="email">이메일:</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="inquiry-type">문의유형:</label>
+        <select id="inquiry-type" name="inquiry-type">
+          <option value="general">일반 문의</option>
+          <option value="technical">기술 문의</option>
+          <option value="billing">결제 문의</option>
+        </select>
+
+        <label for="inquiry-content">문의내용:</label>
+        <textarea id="inquiry-content" name="inquiry-content"></textarea>
+
+        <button type="submit">보내기</button>
+      </form>
+    </main>
+    <footer>
+      <p>
+        &copy; 2026 문의하기 페이지. 김길동. <br />
+        이메일: example@example.com
+      </p>
+    </footer>
+  </body>
+</html>
