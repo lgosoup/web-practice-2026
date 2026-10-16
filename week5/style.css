@@ -1,0 +1,74 @@
+body {
+  position: relative;
+}
+
+/* Header */
+header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  align-items: center;
+  z-index: 2;
+  background-color: green;
+}
+
+header h1 {
+  font-family: "Dongle", sans-serif;
+  font-size: 3rem;
+  position: relative;
+  left: 10px;
+  margin: 0;
+  flex: 1;
+}
+
+header > a {
+  flex: 1;
+  text-align: right;
+}
+
+header nav {
+  display: flex;
+  flex: 2;
+}
+
+header nav ul {
+  display: flex;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+}
+header li {
+  padding: 0 20px;
+  flex: 1;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+/* Main */
+
+#section {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(to bottom, gold, blue);
+}
+
+#section-list ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+#section-list li {
+  position: relative;
+}
+
+#section-list li .badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: red;
+}
